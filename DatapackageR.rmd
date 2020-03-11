@@ -1,0 +1,102 @@
+---
+title: "hello world"
+description: |
+  Taking the `radix` R package for a test spin with `Scikit Learn`!
+author:
+  - name: Jixing Liu
+    url: https://jixing.netlify.com/
+    affiliation: DeepDrug
+    affiliation_url: http://www.deepdrug.cn/en/
+date: "`r Sys.Date()`"
+output: radix::radix_article
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = TRUE,      # Output code chunks
+    message = FALSE,  # Toggle off message output 
+    warning = FALSE)  # Toggle off warning output
+library(DataPackageR)
+pkg_path <- getwd()
+```
+
+## 1. Create a data package directory structure.
+```{r}
+datapackage_skeleton(name = "ddDataSets",
+                     path = pkg_path,
+                     force = TRUE)
+```
+
+
+
+## 2. Add raw data to the package.
+```{r}
+# write our raw data to a csv
+write.csv(
+  x = cars ,
+  file = file.path(pkg_path, "cars.csv"),
+  row.names = FALSE
+)
+
+# this works because we called datapackage_skeleton() first.
+use_raw_dataset(file.path(pkg_path, "cars.csv"))
+
+```
+
+## 3. Add a data processing script.
+```{r}
+use_processing_script(file = "tidy_cars.Rmd",
+                      author = "Jixing Liu",
+                      title = "Process cars into tidy_cars.")
+```
+
+## 4. Edit your processing script.
+
+
+## 5. Let DataPackageR know about the data objects to store in the package.
+```{r}
+use_data_object("tidy_cars")
+```
+
+
+
+## 6. Build the package (for the first time).
+
+```{r}
+options("DataPackageR_interact" = FALSE)
+package_build(packageName = file.path(pkg_path, "ddDataSets"),
+              install = FALSE)
+
+```
+
+
+## 7. Next edit the data set documentation.
+
+```{r}
+# edit this documentation.R file in raw_data
+# ensure we run document() from the DataPackageR namespace and not document() from roxygen or devtools.
+package_path <- file.path(pkg_path,"ddDataSets")
+DataPackageR::document(package_path)
+```
+
+## 📌  Iterate: repeat the 2-7 
+
+We can add more data sets, more scripts, and so forth, until we’re happy with the package.
+
+## 8. A Filnal Build
+
+```{r}
+package_build(file.path(pkg_path,"ddDataSets"))
+```
+
+## git and github
+
+cd the package file
+use git to push to github
+
+
+
+## 8. links:
+
++ [rOpenSci | Building Reproducible Data Packages with DataPackageR](https://ropensci.org/blog/2018/09/18/datapackager/)
