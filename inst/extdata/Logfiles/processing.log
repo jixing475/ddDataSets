@@ -1,0 +1,31 @@
+TRACE [2020-03-11 11:07:42] Logging to /Users/zero/Desktop/ddDataSets/inst/extdata/Logfiles/processing.log
+TRACE [2020-03-11 11:07:42] Processing data
+TRACE [2020-03-11 11:07:42] Reading yaml configuration
+TRACE [2020-03-11 11:07:42] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+TRACE [2020-03-11 11:07:42] Processing 1 of 1: /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+
+TRACE [2020-03-11 11:07:43] 1 data set(s) created by tidy_cars.Rmd
+TRACE [2020-03-11 11:07:43] NEWS.md file not found, creating!
+TRACE [2020-03-11 11:07:43] NEWS.md file found, updating!
+TRACE [2020-03-11 11:07:43] Saving to data
+TRACE [2020-03-11 11:07:43] Copied documentation to /Users/zero/Desktop/ddDataSets/R/ddDataSets.R
+TRACE [2020-03-11 11:07:43] Done
+TRACE [2020-03-11 11:07:43] DataPackageR succeeded
+TRACE [2020-03-11 11:07:43] Building documentation
+TRACE [2020-03-11 11:07:43] Building package
+TRACE [2020-03-11 11:07:57] Rebuilding data package documentation.
+TRACE [2020-03-11 11:08:13] Logging to /Users/zero/Desktop/ddDataSets/inst/extdata/Logfiles/processing.log
+TRACE [2020-03-11 11:08:13] Processing data
+TRACE [2020-03-11 11:08:13] Reading yaml configuration
+TRACE [2020-03-11 11:08:13] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+TRACE [2020-03-11 11:08:13] Processing 1 of 1: /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+
+TRACE [2020-03-11 11:08:14] 1 data set(s) created by tidy_cars.Rmd
+TRACE [2020-03-11 11:08:14] NEWS.md file found, updating!
+TRACE [2020-03-11 11:08:14] Processed data sets match existing data sets at version 0.1.0
+TRACE [2020-03-11 11:08:14] Saving to data
+TRACE [2020-03-11 11:08:14] Copied documentation to /Users/zero/Desktop/ddDataSets/R/ddDataSets.R
+TRACE [2020-03-11 11:08:14] Done
+TRACE [2020-03-11 11:08:14] DataPackageR succeeded
+TRACE [2020-03-11 11:08:14] Building documentation
+TRACE [2020-03-11 11:08:14] Building package
