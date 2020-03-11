@@ -1,13 +1,28 @@
 ---
-title: Process cars into tidy_cars.
-author: Jixing Liu
-date: September 5, 2018
-output_format: html_document
+title: process the data set for test
+description: |
+  Taking the `radix` R package for a test spin with `Scikit Learn`!
+author:
+- name: Jixing Liu
+  url: https://jixing.netlify.com/
+  affiliation: DeepDrug
+  affiliation_url: http://www.deepdrug.cn/en/
+date: '`r Sys.Date()`'
+output: radix::radix_article
 vignette: >
-  %\VignetteIndexEntry{Process cars into tidy_cars.}
+  %\VignetteIndexEntry{process the data set for test}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = TRUE,      # Output code chunks
+    message = FALSE,  # Toggle off message output 
+    warning = FALSE)  # Toggle off warning output
+```
+
+
 
 ```{r}
 library(dplyr)

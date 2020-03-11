@@ -29,3 +29,86 @@ TRACE [2020-03-11 11:08:14] Done
 TRACE [2020-03-11 11:08:14] DataPackageR succeeded
 TRACE [2020-03-11 11:08:14] Building documentation
 TRACE [2020-03-11 11:08:14] Building package
+TRACE [2020-03-11 13:50:29] Logging to /Users/zero/Desktop/ddDataSets/inst/extdata/Logfiles/processing.log
+TRACE [2020-03-11 13:50:29] Processing data
+TRACE [2020-03-11 13:50:29] Reading yaml configuration
+TRACE [2020-03-11 13:50:29] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+TRACE [2020-03-11 13:50:29] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+TRACE [2020-03-11 13:50:29] Processing 1 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+
+TRACE [2020-03-11 13:50:29] 1 data set(s) created by tidy_cars.Rmd
+TRACE [2020-03-11 13:50:29] Processing 2 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+
+TRACE [2020-03-11 13:50:30] 1 data set(s) created by tidy_iris.Rmd
+TRACE [2020-03-11 13:50:30] NEWS.md file found, updating!
+DEBUG [2020-03-11 13:50:30] tidy_iris added.
+DEBUG [2020-03-11 13:50:30] tidy_iris added.
+DEBUG [2020-03-11 13:50:30] tidy_iris added.
+TRACE [2020-03-11 13:50:30] NEWS.md file found, updating!
+TRACE [2020-03-11 13:50:30] NEWS.md file found, updating!
+TRACE [2020-03-11 13:50:30] Data has been updated and DataVersion string incremented automatically to 0.1.1
+TRACE [2020-03-11 13:50:30] Saving to data
+TRACE [2020-03-11 13:50:30] Copied documentation to /Users/zero/Desktop/ddDataSets/R/ddDataSets.R
+TRACE [2020-03-11 13:50:30] Done
+TRACE [2020-03-11 13:50:30] DataPackageR succeeded
+TRACE [2020-03-11 13:50:30] Building documentation
+TRACE [2020-03-11 13:50:30] Building package
+TRACE [2020-03-11 13:50:48] Rebuilding data package documentation.
+TRACE [2020-03-11 13:51:12] Logging to /Users/zero/Desktop/ddDataSets/inst/extdata/Logfiles/processing.log
+TRACE [2020-03-11 13:51:12] Processing data
+TRACE [2020-03-11 13:51:12] Reading yaml configuration
+TRACE [2020-03-11 13:51:12] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+TRACE [2020-03-11 13:51:12] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+TRACE [2020-03-11 13:51:12] Processing 1 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+
+TRACE [2020-03-11 13:51:12] 1 data set(s) created by tidy_cars.Rmd
+TRACE [2020-03-11 13:51:12] Processing 2 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+
+TRACE [2020-03-11 13:51:12] 1 data set(s) created by tidy_iris.Rmd
+TRACE [2020-03-11 13:51:12] NEWS.md file found, updating!
+TRACE [2020-03-11 13:51:12] Processed data sets match existing data sets at version 0.1.1
+TRACE [2020-03-11 13:51:12] Saving to data
+TRACE [2020-03-11 13:51:12] Copied documentation to /Users/zero/Desktop/ddDataSets/R/ddDataSets.R
+TRACE [2020-03-11 13:51:12] Done
+TRACE [2020-03-11 13:51:12] DataPackageR succeeded
+TRACE [2020-03-11 13:51:12] Building documentation
+TRACE [2020-03-11 13:51:13] Building package
+TRACE [2020-03-11 14:07:16] Logging to /Users/zero/Desktop/ddDataSets/inst/extdata/Logfiles/processing.log
+TRACE [2020-03-11 14:07:16] Processing data
+TRACE [2020-03-11 14:07:16] Reading yaml configuration
+TRACE [2020-03-11 14:07:16] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+TRACE [2020-03-11 14:07:16] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+TRACE [2020-03-11 14:07:16] Processing 1 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+
+TRACE [2020-03-11 14:07:17] 1 data set(s) created by tidy_cars.Rmd
+TRACE [2020-03-11 14:07:17] Processing 2 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+
+TRACE [2020-03-11 14:07:17] 1 data set(s) created by tidy_iris.Rmd
+TRACE [2020-03-11 14:07:17] NEWS.md file found, updating!
+TRACE [2020-03-11 14:07:17] Processed data sets match existing data sets at version 0.1.1
+TRACE [2020-03-11 14:07:17] Saving to data
+TRACE [2020-03-11 14:07:17] Copied documentation to /Users/zero/Desktop/ddDataSets/R/ddDataSets.R
+TRACE [2020-03-11 14:07:17] Done
+TRACE [2020-03-11 14:07:17] DataPackageR succeeded
+TRACE [2020-03-11 14:07:17] Building documentation
+TRACE [2020-03-11 14:07:18] Building package
+TRACE [2020-03-11 14:07:28] Rebuilding data package documentation.
+TRACE [2020-03-11 14:07:35] Logging to /Users/zero/Desktop/ddDataSets/inst/extdata/Logfiles/processing.log
+TRACE [2020-03-11 14:07:35] Processing data
+TRACE [2020-03-11 14:07:35] Reading yaml configuration
+TRACE [2020-03-11 14:07:35] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+TRACE [2020-03-11 14:07:35] Found /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+TRACE [2020-03-11 14:07:35] Processing 1 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_cars.Rmd
+
+TRACE [2020-03-11 14:07:35] 1 data set(s) created by tidy_cars.Rmd
+TRACE [2020-03-11 14:07:35] Processing 2 of 2: /Users/zero/Desktop/ddDataSets/data-raw/tidy_iris.Rmd
+
+TRACE [2020-03-11 14:07:35] 1 data set(s) created by tidy_iris.Rmd
+TRACE [2020-03-11 14:07:35] NEWS.md file found, updating!
+TRACE [2020-03-11 14:07:35] Processed data sets match existing data sets at version 0.1.1
+TRACE [2020-03-11 14:07:35] Saving to data
+TRACE [2020-03-11 14:07:35] Copied documentation to /Users/zero/Desktop/ddDataSets/R/ddDataSets.R
+TRACE [2020-03-11 14:07:35] Done
+TRACE [2020-03-11 14:07:35] DataPackageR succeeded
+TRACE [2020-03-11 14:07:35] Building documentation
+TRACE [2020-03-11 14:07:36] Building package

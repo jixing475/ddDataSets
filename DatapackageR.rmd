@@ -18,14 +18,15 @@ knitr::opts_chunk$set(
     message = FALSE,  # Toggle off message output 
     warning = FALSE)  # Toggle off warning output
 library(DataPackageR)
-pkg_path <- getwd()
+library(tidyverse)
+library(here)
 ```
 
 ## 1. Create a data package directory structure.
 ```{r}
-datapackage_skeleton(name = "ddDataSets",
-                     path = pkg_path,
-                     force = TRUE)
+# datapackage_skeleton(name = "ddDataSets",
+#                      path = project_path(),
+#                      force = TRUE)
 ```
 
 
@@ -33,22 +34,18 @@ datapackage_skeleton(name = "ddDataSets",
 ## 2. Add raw data to the package.
 ```{r}
 # write our raw data to a csv
-write.csv(
-  x = cars ,
-  file = file.path(pkg_path, "cars.csv"),
-  row.names = FALSE
-)
-
+write_csv(iris,
+          file.path(project_path(), "iris.csv"))
 # this works because we called datapackage_skeleton() first.
-use_raw_dataset(file.path(pkg_path, "cars.csv"))
+use_raw_dataset(file.path(project_path(), "iris.csv"))
 
 ```
 
 ## 3. Add a data processing script.
 ```{r}
-use_processing_script(file = "tidy_cars.Rmd",
+use_processing_script(file = "tidy_iris.Rmd",
                       author = "Jixing Liu",
-                      title = "Process cars into tidy_cars.")
+                      title = "Process iris into tidy_cars.")
 ```
 
 ## 4. Edit your processing script.
@@ -56,7 +53,7 @@ use_processing_script(file = "tidy_cars.Rmd",
 
 ## 5. Let DataPackageR know about the data objects to store in the package.
 ```{r}
-use_data_object("tidy_cars")
+use_data_object("tidy_iris")
 ```
 
 
@@ -65,7 +62,7 @@ use_data_object("tidy_cars")
 
 ```{r}
 options("DataPackageR_interact" = FALSE)
-package_build(packageName = file.path(pkg_path, "ddDataSets"),
+package_build(packageName = project_path(),
               install = FALSE)
 
 ```
@@ -76,8 +73,8 @@ package_build(packageName = file.path(pkg_path, "ddDataSets"),
 ```{r}
 # edit this documentation.R file in raw_data
 # ensure we run document() from the DataPackageR namespace and not document() from roxygen or devtools.
-package_path <- file.path(pkg_path,"ddDataSets")
-DataPackageR::document(package_path)
+
+DataPackageR::document(project_path())
 ```
 
 ## 📌  Iterate: repeat the 2-7 
@@ -87,7 +84,7 @@ We can add more data sets, more scripts, and so forth, until we’re happy with 
 ## 8. A Filnal Build
 
 ```{r}
-package_build(file.path(pkg_path,"ddDataSets"))
+package_build(project_path())
 ```
 
 ## git and github
